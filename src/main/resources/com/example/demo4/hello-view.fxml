@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="597.0" prefWidth="505.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label alignment="CENTER" prefHeight="33.0" prefWidth="216.0" text="TextFilterer">
+      <font>
+         <Font name="Arial Bold" size="29.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" prefHeight="17.0" prefWidth="148.0" text="Write Something">
+      <font>
+         <Font name="Arial" size="15.0" />
+      </font>
+      <VBox.margin>
+         <Insets top="10.0" />
+      </VBox.margin>
+   </Label>
+   <TextArea id="ipad" fx:id="inputText" prefHeight="54.0" prefWidth="465.0" />
+   <ComboBox id="glass" fx:id="letterBox" prefHeight="25.0" prefWidth="53.0" stylesheets="@stylesheet.css" />
+   <Button id="glass" mnemonicParsing="false" onAction="#onFilterButtonClick" prefHeight="25.0" prefWidth="66.0" stylesheets="@stylesheet.css" text="Filter">
+      <font>
+         <Font name="Arial Bold" size="15.0" />
+      </font></Button>
+   <Label fx:id="outputText" alignment="BOTTOM_LEFT" prefHeight="50.0" prefWidth="293.0">
+      <font>
+         <Font name="Arial" size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="redLines" alignment="BOTTOM_LEFT" prefHeight="25.0" prefWidth="293.0" textFill="RED">
+      <font>
+         <Font name="Arial" size="20.0" />
+      </font>
+   </Label>
+</VBox>
